@@ -11,11 +11,7 @@ export function getPlanetsNamesWithMoons(data) {
       return planet.moons !== undefined;
   })
 
-  const newArray = planetsWithMoons.map((name) => {
-    return name.name;
-  })
-
-  return newArray;
+  return planetsWithMoons.map((name) => name.name)
   
 }
 

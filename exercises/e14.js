@@ -10,11 +10,8 @@ export function getOrbitalPeriodsSum(data) {
     return asteroid.orbitalPeriod;
   })
 
-  let sum = orbPeriods.reduce((acc, currentVal) => {
-    return acc + currentVal;
-  })
+  return orbPeriods.reduce((acc, currentVal) => acc + currentVal);
 
-  return sum;
 }
 
 

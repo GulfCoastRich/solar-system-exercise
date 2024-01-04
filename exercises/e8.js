@@ -7,14 +7,7 @@ import { data } from "../data/data";
 export function findPlanetNameByMoon(data, moonName) {
   // Your code goes here...
 
-  const planetsWithMoons = data.planets.filter((planet) => {
-    return planet.moons !== undefined;
-  });
-
-  let obj = planetsWithMoons.find((o) => o.moons.includes(moonName));
-  
-  return obj.name;
-
+  return data.planets.filter((planet) => planet.moons).find((o) => o.moons.includes(moonName)).name;
   
 }
 
